@@ -1,0 +1,19 @@
+body{
+    padding:200px 100px;
+}
+.area {
+	text-align:center;
+	vertical-align:middle;
+	padding: 10px 0px 0px 0px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: 3px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+}
