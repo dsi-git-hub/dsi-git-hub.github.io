@@ -6,36 +6,19 @@
 	    <link rel="stylesheet" type="text/css" href="index.css" />
 
   	</head>
-  	<script type="text/javascript" language="javascript">
-  		window.onload = function () {
-  			window.inputWidth = screen.width / 10;
-  		}
-	    function focusNext(value, i) {
-	    	value = value.replace(/[^\d]/g,'');
-	    	if (value.length == 1 && i < document.forms[0].elements.length) {
-	    		var Input = document.forms[0].elements[i];
-	    		if (Input.value.length == 0) {
-	    			Input.focus();
-	    		}
-	    	}
-	    }
-	</script>
-  
+	<!-- <script src="index.js"></script> -->
+	<script src="enindex.js"></script>
   	<body>
+  		<div style="display:inline;">
+	  	</div>
+
   		<form class = "area" name="keycode">
-  			<input  class="input" type="text" oninput = "focusNext(this.value, 1)" maxlength="1">
-  			<input  class="input" type="text" oninput = "focusNext(this.value, 2)" maxlength="1">
-  			<input  class="input" type="text" oninput = "focusNext(this.value, 3)" maxlength="1">
-  			<input  class="input" type="text" oninput = "focusNext(this.value, 4)" maxlength="1">
-  			<input  class="input" type="text" oninput = "focusNext(this.value, 5)" maxlength="1">
-  			<input  class="input" type="text" oninput = "focusNext(this.value, 6)" maxlength="1">
-  			<input  class="input" type="text" oninput = "focusNext(this.value, 7)" maxlength="1">
-  			<input  class="input" type="text" oninput = "focusNext(this.value, 8)" maxlength="1">
-  			
+			Please input your group number:
+			<input id="group" class="input" type="text" maxlength="1">
   		</form>
 	     
 		<div class="area">
-			<button class="button" formType="submit">Submit</button>  
+			<button class="button" formType="button" onclick="submitGroup()">Submit</button>  
 		</div>
   	</body>
 </html>
