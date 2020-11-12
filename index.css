@@ -16,7 +16,8 @@ body{
 }
 
 .input_div {
-	margin: 7px;
+    margin: 7px;
+    display: inline-table;
 }
 
 .input {
@@ -42,6 +43,15 @@ body{
     font-size: 20px;
 }
 
-.imagediv {
+
+.imageparent {
     padding: 20px;
+}
+
+.imagediv {
+    display: inline-table;
+}
+
+.imgnum {
+    margin: 5px;
 }
